@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11756" systemVersion="16B2657" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PlanEntity" representedClassName="PlanEntity" syncable="YES">
+        <attribute name="actual_duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" attributeType="String" syncable="YES"/>
+        <attribute name="end_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="plan_duration" attributeType="String" syncable="YES"/>
+        <attribute name="start_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TaskEntity" representedClassName="TaskEntity" syncable="YES">
+        <attribute name="content" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="plan_id" attributeType="String" syncable="YES"/>
+        <attribute name="state" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES">
+        <attribute name="count" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sound" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="total_duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vibration" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PlanEntity" positionX="-45" positionY="0" width="128" height="180"/>
+        <element name="TaskEntity" positionX="-18" positionY="90" width="128" height="105"/>
+        <element name="UserEntity" positionX="9" positionY="117" width="128" height="150"/>
+    </elements>
+</model>
